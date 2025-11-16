@@ -181,13 +181,13 @@ export interface SiteConfig {
 export const siteConfig: SiteConfig = {
   // Site Information
   // [CONFIG:SITE_URL]
-  site: "https://astro-modular.netlify.app",
+  site: "https://anonix.ru",
   // [CONFIG:SITE_TITLE]
-  title: "Astro Modular",
+  title: "Anonix Services",
   // [CONFIG:SITE_DESCRIPTION]
-  description: "A flexible blog theme designed for Obsidian users.",
+  description: "Links to all my services and projects.",
   // [CONFIG:SITE_AUTHOR]
-  author: "David V. Kimball",
+  author: "Anonix",
   // [CONFIG:SITE_LANGUAGE]
   language: "en",
 
@@ -304,47 +304,30 @@ export const siteConfig: SiteConfig = {
   // Navigation
   navigation: {
     // [CONFIG:NAVIGATION_SHOW_NAVIGATION]
-    showNavigation: true,
+    showNavigation: false,
     // [CONFIG:NAVIGATION_STYLE]
-    style: "traditional", // 'minimal' or 'traditional'
+    style: "minimal", // 'minimal' or 'traditional'
     // [CONFIG:NAVIGATION_SHOW_MOBILE_MENU]
-    showMobileMenu: true,
+    showMobileMenu: false,
     // [CONFIG:NAVIGATION_PAGES]
-    pages: [
-      { title: "Posts", url: "/posts" },
-      { title: "Projects", url: "/projects" },
-      { title: "Docs", url: "/docs" },
-      { title: "About", url: "/about" },
-      { title: "GitHub", url: "https://github.com/davidvkimball/astro-modular" },
-    ],
+    pages: [],
     // [CONFIG:NAVIGATION_SOCIAL]
-    social: [
-      {
-        title: "X",
-        url: "https://x.com/davidvkimball",
-        icon: "x-twitter",
-      },
-      {
-        title: "GitHub",
-        url: "https://github.com/davidvkimball",
-        icon: "github",
-      },
-    ],
+    social: [],
   },
 
   // Optional Content Types - Enable/disable optional content sections (takes priority over homeOptions)
   optionalContentTypes: {
     // [CONFIG:OPTIONAL_CONTENT_TYPES_PROJECTS]
-    projects: true, // Enable projects section
+    projects: false, // Enable projects section
     // [CONFIG:OPTIONAL_CONTENT_TYPES_DOCS]
-    docs: true, // Enable documentation section
+    docs: false, // Enable documentation section
   },
 
   // Home Options
   homeOptions: {
     featuredPost: {
       // [CONFIG:HOME_OPTIONS_FEATURED_POST_ENABLED]
-      enabled: true, // Show featured post on homepage
+      enabled: false, // Show featured post on homepage
       // [CONFIG:HOME_OPTIONS_FEATURED_POST_TYPE]
       type: "latest", // "latest" or "featured"
       // [CONFIG:HOME_OPTIONS_FEATURED_POST_SLUG]
@@ -352,25 +335,25 @@ export const siteConfig: SiteConfig = {
     },
     recentPosts: {
       // [CONFIG:HOME_OPTIONS_RECENT_POSTS_ENABLED]
-      enabled: true, // Show recent posts on homepage
+      enabled: false, // Show recent posts on homepage
       // [CONFIG:HOME_OPTIONS_RECENT_POSTS_COUNT]
       count: 7, // Number of recent posts to show
     },
     projects: {
       // [CONFIG:HOME_OPTIONS_PROJECTS_ENABLED]
-      enabled: true, // Show featured projects on homepage
+      enabled: false, // Show featured projects on homepage
       // [CONFIG:HOME_OPTIONS_PROJECTS_COUNT]
       count: 2, // Number of projects to show
     },
     docs: {
       // [CONFIG:HOME_OPTIONS_DOCS_ENABLED]
-      enabled: true, // Show featured docs on homepage
+      enabled: false, // Show featured docs on homepage
       // [CONFIG:HOME_OPTIONS_DOCS_COUNT]
       count: 3, // Number of docs to show
     },
     blurb: {
       // [CONFIG:HOME_OPTIONS_BLURB_PLACEMENT]
-      placement: "below", // 'above' (at the top), 'below' (after content), or 'none' (disabled)
+      placement: "none", // 'above' (at the top), 'below' (after content), or 'none' (disabled)
     },
   },
 
